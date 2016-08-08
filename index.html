@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+  <meta charset="UTF-8">
+  <title>N予備校で利用できるブックマークレット集</title>
+</head>
+
+<body>
+  <h1>N予備校で利用できるブックマークレット集</h1>
+  <p>以下のリンクをChromeのブックマークバーにドラッグ&amp;ドロップすることで、
+    ブックマークレットを作成することができます
+  </p>
+  <h3>ブックマークレット一覧</h3>
+  <ul>
+    <li><a href="javascript:document.getElementById('player_html5_api').playbackRate = 2.0;">倍速</a>
+      <ul>
+        <li>倍速で動画を再生します。</li>
+      </ul>
+    </li>
+    <li><a href="javascript:document.getElementById('player_html5_api').playbackRate = 1.0;">1倍速</a>
+      <ul>
+        <li>1倍速で動画を再生します。</li>
+      </ul>
+    </li>
+    <li><a href="javascript:document.getElementById('player_html5_api').playbackRate = 3.0;">3倍速</a>
+      <ul>
+        <li>3倍速で動画を再生します。</li>
+      </ul>
+    </li>
+    <li><a href="javascript:window.open(document.getElementById('player_html5_api').currentSrc);">別ﾀﾌﾞ</a>
+      <ul>
+        <li>動画を別タブで再生します。</li>
+      </ul>
+    </li>
+    <li><a href="javascript:document.getElementsByTagName('video')[0].playbackRate = 2.0;">別ﾀﾌﾞ倍速</a>
+      <ul>
+        <li>別タブで開いた動画を倍速再生します。</li>
+      </ul>
+    </li>
+    <li><a href="javascript:document.getElementsByTagName('video')[0].playbackRate = 1.0;">別ﾀﾌﾞ1倍速</a>
+      <ul>
+        <li>別タブで開いた動画を1倍速再生します。</li>
+      </ul>
+    </li>
+    <li><a href="javascript:document.getElementsByTagName('video')[0].playbackRate = 3.0;">別ﾀﾌﾞ3倍速</a>
+      <ul>
+        <li>別タブで開いた動画を3倍速再生します。</li>
+      </ul>
+    </li>
+    <li><a href="javascript:window.open(document.getElementById('player_html5_api').currentSrc, '_blank', 'width=800,height=600');">別ｳｨﾝﾄﾞｳ</a>
+      <ul>
+        <li>動画を別ウィンドウで再生します</li>
+      </ul>
+    </li>
+  </ul>
+</body>
+
+</html>
