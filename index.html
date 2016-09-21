@@ -28,29 +28,14 @@
         <li>3倍速で動画を再生します。</li>
       </ul>
     </li>
-    <li><a href="javascript:window.open(document.getElementById('vjs_video_3_html5_api').currentSrc);">別ﾀﾌﾞ</a>
+    <li><a href="javascript:document.getElementById('vjs_video_3_html5_api').currentTime = document.getElementById('vjs_video_3_html5_api').currentTime + 10;">&gt;&gt;</a>
       <ul>
-        <li>動画を別タブで再生します。</li>
+        <li>早送り(10秒)します。</li>
       </ul>
     </li>
-    <li><a href="javascript:document.getElementsByTagName('video')[0].playbackRate = 2.0;">別ﾀﾌﾞ倍速</a>
+    <li><a href="javascript:document.getElementById('vjs_video_3_html5_api').currentTime = document.getElementById('vjs_video_3_html5_api').currentTime - 10;">&lt;&lt;</a>
       <ul>
-        <li>別タブで開いた動画を倍速再生します。</li>
-      </ul>
-    </li>
-    <li><a href="javascript:document.getElementsByTagName('video')[0].playbackRate = 1.0;">別ﾀﾌﾞ1倍速</a>
-      <ul>
-        <li>別タブで開いた動画を1倍速再生します。</li>
-      </ul>
-    </li>
-    <li><a href="javascript:document.getElementsByTagName('video')[0].playbackRate = 3.0;">別ﾀﾌﾞ3倍速</a>
-      <ul>
-        <li>別タブで開いた動画を3倍速再生します。</li>
-      </ul>
-    </li>
-    <li><a href="javascript:window.open(document.getElementById('vjs_video_3_html5_api').currentSrc, '_blank', 'width=800,height=600');">別ｳｨﾝﾄﾞｳ</a>
-      <ul>
-        <li>動画を別ウィンドウで再生します。</li>
+        <li>早戻し(10秒)します。</li>
       </ul>
     </li>
   </ul>
