@@ -9,8 +9,16 @@
 <body>
   <h1>N予備校で利用できるブックマークレット集</h1>
   <p>以下のリンクをChromeのブックマークバーにドラッグ&amp;ドロップすることで、
-    ブックマークレットを作成することができます。なお動作確認はChromeでしか行っていません。 (最終更新日:2016/09/22)
+    ブックマークレットを作成することができます。なお動作確認はChromeでしか行っていません。 (最終更新日:2016/12/14)
   </p>
+    <h3>生放送/動画用ブックマークレット一覧</h3>
+  <ul>
+    <li><a href="javascript:var commentTextArea = document.querySelector('#comment-text-area');if (!commentTextArea) {  var column = document.querySelector('.component-lesson-left-column');  var div = document.createElement('div');  commentTextArea = document.createElement('textarea');  commentTextArea.id = 'comment-text-area';  div.appendChild(commentTextArea);  column.appendChild(div);}window.addEventListener('appearComment', function(e) {  var comments = window.kyuuri.comments;  var currentComment = comments.find(function(co) { return co.no === e.detail.item.no; });  commentTextArea.value += '\n' + currentComment.no + ': ' + currentComment.text;  commentTextArea.scrollTop = commentTextArea.scrollHeight;}, false);" >ｺﾒﾋﾞｭ</a>
+      <ul>
+        <li>コメント一覧を映像の下に表示します。</li>
+      </ul>
+    </li>
+  </ul>
   <h3>動画再生用ブックマークレット一覧</h3>
   <ul>
     <li><a href="javascript:document.getElementById('vjs_video_3_html5_api').playbackRate = 2.0;">倍速</a>
